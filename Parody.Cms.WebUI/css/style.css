@@ -1,0 +1,340 @@
+nav ul ,ul{
+    list-style: none;
+}
+ul li{
+    display:inline-block;
+}
+a{
+    color:#000;
+}
+a:hover{
+    text-decoration:none;
+}
+div.center{
+    text-align:center;
+}
+.p-left-0{
+    padding-left:0;
+}
+.p-right-0{
+    padding-right:0;
+}
+form{
+    color:#ffffff;
+}
+.form-input{
+    padding: 5px;
+    width: 100%;
+    height: 40px;
+    border: none;
+}
+.form-group input, .form-group textarea {
+    border-radius: inherit;
+    border: 1px solid #cd8500;
+}
+/*LOADING*/
+.loading-mark
+{
+    z-index:1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,1);
+    text-align: center;
+}
+.loading-mark .loader{
+        height: 100%;
+    width: 100%;
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    top:50%;
+    margin-top:-180px;
+}
+/*GENERAL*/
+h1, h2, h3, .h1, .h2, .h3{
+    font-family:'AvantGardeRegular';
+}
+body{
+        /*background: url(../img/main_bg.jpg) repeat-x 0% 0%;*/
+        background-color: #f9f9f9;
+       font-family:'AvantGardeRegular';
+}
+.wrapper{
+    /*background: url(../img/shadow.jpg) no-repeat 50% 26px;*/
+}
+header {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 auto;
+}
+header .header-line{
+    height:25px;
+
+}
+header a{
+    color:#ffffff;
+}
+header a.logo{
+    font-size:26px;
+}
+header .navigation {
+    position: relative;
+    z-index: 200;
+    width: 100%;
+    padding: 10px 0;
+   background:#c71585;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+header nav ul {
+    float: right;
+    padding-bottom:0 !important;
+}
+header nav li {
+
+    float: left;
+    margin-right: 20px;
+    font-size: 14px;
+    line-height: inherit;
+}
+header nav li a{
+        padding:5px;
+}
+header nav li a:hover, a.logo:hover,header nav li.current_page_item a{
+
+    color:#ffff00;
+    border-top: 3px solid transparent;
+    border-top:2px solid #82B64A;
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.15);
+}
+.slider img{
+    border-radius:5px;
+}
+.slick-slider{
+    margin-bottom:0 !important;
+}
+.phone-number{
+    color:#cd8500;
+    font-size:16px;
+}
+/*banner*/
+.banner{
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    padding: 7px 0 7px;
+    background: #f4f4f2;
+}
+
+
+/*End banner*/
+.about-page,.product-page,.Collage 
+{
+    padding:10px 0px;
+}
+
+/*Feature*/
+.main-feature {
+    padding: 20px;
+}
+.product-showcase {
+    border: 1px solid #ccc;
+    background: #ffffff;
+    position: relative;
+    margin-top: -100px;
+}
+/*Content Page*/
+.content-wrapper{
+     background: #ffffff;
+     padding:20px 0px;
+}
+.title{
+    text-transform:uppercase;
+    border-bottom:2px solid #82B64A;
+}
+.product-item{
+        margin-bottom:25px;
+        padding-bottom:5px;
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.15);
+}
+.product-item img{
+    padding:10px 5px;
+}
+.product-item-name{
+    text-transform:uppercase;
+}
+.product-item-info{
+    text-align:justify;
+}
+/*FASHION*/
+.Collage{
+
+    /*This is where you set the padding you want between the images*/
+    padding:10px;
+
+}
+.Collage img{
+    margin:0;
+    padding:0;
+    display:inline-block;
+    vertical-align:bottom;
+    opacity:1;
+
+    /*This is where you set the border you want for the image*/
+    border:6px solid #FFF;
+}
+.Image_Wrapper{
+    /* to get the fade in effect, set opacity to 0 on the first element within the gallery area */
+    opacity:0;
+    -moz-box-shadow:0px 2px 4px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow:0px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow:0px 2px 4px rgba(0, 0, 0, 0.1);
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.Caption{
+    font-size:14px;
+    font-weight:normal;
+    font-family:arial;
+}
+.Caption_Content{
+    /* padding:10px; */
+    color:#FFF;
+    padding:20px;
+}
+.breadcrumb .active a{
+    border-top:1px solid #82B64A;
+}
+/*Paging CSS*/
+.pagination{
+    margin: 0 !important;
+}
+ul.pagination li.active a {
+    background-color: #4CAF50 !important;
+    border-color:#ffffff !important;
+    color: white;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd !important; }
+
+/*ABOUT PAGE*/
+
+
+
+/*Contact Page*/
+
+.contact-header{
+    border-bottom:1px solid #ccc;
+}
+.contact-content{
+    padding:10px 0px;
+}
+.btn-contact{
+    border:1px solid #cd8500 !important;
+    color:#222;
+    border-radius:5px;
+    padding:2px 12px;
+ 
+}
+/*End*/
+footer{
+    background: #c71585;
+    margin-top:7px;
+    padding-top:10px;
+    color: #ffffff;
+}
+footer a {
+    color: #ffffff;
+}
+footer .ct-connect {
+        float: right;
+    margin: 15px 22px 0 0;
+    padding: 0px;
+    width: 252px;
+    height: 34px;
+}
+footer .ct-connect li {
+    float: left;
+}
+footer .ct-connect li a {
+    position: relative;
+    display: block;
+    margin: 0 2px;
+    width: 34px;
+    height: 34px;
+    outline: none;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+}
+.ct-connect li a:before, .ct-icon-search:before, .ct-icon-info:before {
+    text-transform: none;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 18px;
+    font-family: 'codrops-social';
+    line-height: 40px;
+    line-height: 1;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+}
+.ct-icon-mail:before {
+    content: "\e005";
+}
+
+@media (max-width: 991px)
+{
+.menu-toggle {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    z-index: 999;
+    -webkit-transition: top .3s;
+    transition: top .3s;
+}
+.toggle.cross {
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+}
+.toggle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+.toggle span {
+    margin: 0 auto;
+    top: 12px;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+}
+.toggle, .toggle span {
+    position: relative;
+    z-index: 999;
+}
+.toggle span:after, .toggle span:before {
+    position: absolute;
+    content: '';
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+}
+}

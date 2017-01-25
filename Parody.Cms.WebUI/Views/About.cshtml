@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "MasterPage.cshtml";
+}
+<div class="about-page container">
+    <div class="row">
+        <article>
+            <div class="col-md-4">
+                <img class="img-responsive" src="~/img/about-rp.jpg" />
+            </div>
+            <div class="col-md-8">
+                @CurrentPage.content
+            </div>
+
+        </article>
+    </div>
+</div>

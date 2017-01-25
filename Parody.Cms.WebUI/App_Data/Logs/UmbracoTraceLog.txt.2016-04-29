@@ -1,0 +1,57 @@
+﻿ 2016-04-29 10:32:08,674 [P3880/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.3.0 application starting on GULINESOLUTION
+ 2016-04-29 10:32:08,783 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-04-29 10:32:08,783 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 6ms)
+ 2016-04-29 10:32:08,923 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-04-29 10:32:08,970 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 52ms)
+ 2016-04-29 10:32:09,048 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-04-29 10:32:09,048 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 2ms)
+ 2016-04-29 10:32:09,064 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-04-29 10:32:09,064 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 0ms)
+ 2016-04-29 10:32:09,079 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-04-29 10:32:09,079 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 0ms)
+ 2016-04-29 10:32:09,079 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-04-29 10:32:09,079 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 2ms)
+ 2016-04-29 10:32:09,157 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-04-29 10:32:09,157 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 0ms)
+ 2016-04-29 10:32:09,157 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-04-29 10:32:09,157 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 0ms)
+ 2016-04-29 10:32:09,984 [P3880/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-04-29 10:32:10,249 [P3880/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-04-29 10:32:10,265 [P3880/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-04-29 10:32:10,281 [P3880/D2/T1] WARN  Umbraco.Core.Sync.DatabaseServerMessenger - No last synced Id found, this generally means this is a new server/install. The server will rebuild its caches and indexes and then adjust it's last synced id to the latest found in the database and will start maintaining cache updates based on that id
+ 2016-04-29 10:32:10,296 [P3880/D2/T1] INFO  umbraco.content - Load Xml from file...
+ 2016-04-29 10:32:10,312 [P3880/D2/T1] INFO  umbraco.content - Loaded Xml from file.
+ 2016-04-29 10:32:10,327 [P3880/D2/T1] INFO  umbraco.content - Loading content from database...
+ 2016-04-29 10:32:11,638 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-04-29 10:32:11,638 [P3880/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 1ms)
+ 2016-04-29 10:32:12,371 [P3880/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-04-29 10:32:12,371 [P3880/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-04-29 10:32:12,371 [P3880/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-04-29 10:32:12,418 [P3880/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 3849ms)
+ 2016-04-29 10:32:13,401 [P3880/D2/T9] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://rongphung.guline.com:80/umbraco (UmbracoModule request)
+ 2016-04-29 10:32:14,228 [P3880/D2/T9] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-04-29 10:32:14,243 [P3880/D2/T9] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 0ms)
+ 2016-04-29 10:32:14,992 [P3880/D2/T10] INFO  umbraco.content - Save Xml to file...
+ 2016-04-29 10:32:14,992 [P3880/D2/T14] INFO  umbraco.content - Saved Xml to file.
+ 2016-04-29 10:33:16,004 [P3880/D2/T9] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-04-28 10:33:16
+ 2016-04-29 10:40:21,557 [P3880/D2/T26] WARN  Umbraco.Web.UmbracoModule - Status code is 404 yet TrySkipIisCustomErrors is false - IIS will take over.
+ 2016-04-29 10:43:41,097 [P3880/D2/T32] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username admin@admin.com from IP address 125.212.211.115
+ 2016-04-29 10:43:41,549 [P3880/D2/T40] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-04-29 10:43:41,596 [P3880/D2/T40] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 40ms)
+ 2016-04-29 10:43:41,721 [P3880/D2/T12] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-04-29 10:43:41,768 [P3880/D2/T12] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 55ms)
+ 2016-04-29 10:43:41,799 [P3880/D2/T12] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-04-29 10:43:41,799 [P3880/D2/T12] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-04-29 10:43:41,799 [P3880/D2/T12] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-04-29 10:43:41,814 [P3880/D2/T12] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 6ms)
+ 2016-04-29 10:43:41,861 [P3880/D2/T40] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2016-04-29 10:43:41,877 [P3880/D2/T40] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 14ms)
+ 2016-04-29 10:45:23,495 [P3880/D2/T16] INFO  Umbraco.Core.Publishing.PublishingStrategy - Content 'Trang Chủ' with Id '1051' has been published.
+ 2016-04-29 10:45:23,838 [P3880/D2/T16] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ICacheRefresher
+ 2016-04-29 10:45:23,838 [P3880/D2/T16] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ICacheRefresher, found 0 (took 1ms)
+ 2016-04-29 10:45:28,019 [P3880/D2/T14] INFO  umbraco.content - Save Xml to file...
+ 2016-04-29 10:45:28,019 [P3880/D2/T20] INFO  umbraco.content - Saved Xml to file.
+ 2016-04-29 11:03:17,089 [P3880/D2/T16] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: admin@admin.com, IP Address: 125.212.211.115
+ 2016-04-29 14:33:16,030 [P3880/D2/T9] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-04-28 14:33:16
+ 2016-04-29 18:33:16,041 [P3880/D2/T9] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-04-28 18:33:16
+ 2016-04-29 22:33:16,052 [P3880/D2/T9] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-04-28 22:33:16

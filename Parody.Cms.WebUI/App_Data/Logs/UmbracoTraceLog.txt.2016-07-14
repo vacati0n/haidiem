@@ -1,0 +1,62 @@
+﻿ 2016-07-14 08:51:33,266 [P6676/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.3.0 application starting on GULINESOLUTION
+ 2016-07-14 08:51:33,841 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-07-14 08:51:33,861 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 20ms)
+ 2016-07-14 08:51:34,513 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-07-14 08:51:34,639 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 125ms)
+ 2016-07-14 08:51:34,839 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-07-14 08:51:34,842 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 2ms)
+ 2016-07-14 08:51:34,843 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-07-14 08:51:34,844 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 1ms)
+ 2016-07-14 08:51:34,904 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-07-14 08:51:34,906 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 1ms)
+ 2016-07-14 08:51:34,906 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-07-14 08:51:34,911 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 4ms)
+ 2016-07-14 08:51:35,564 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-07-14 08:51:35,565 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 0ms)
+ 2016-07-14 08:51:35,565 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-07-14 08:51:35,565 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 0ms)
+ 2016-07-14 08:51:37,163 [P6676/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 08:51:37,666 [P6676/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 08:51:37,710 [P6676/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-07-14 08:51:37,741 [P6676/D2/T1] WARN  Umbraco.Core.Sync.DatabaseServerMessenger - No last synced Id found, this generally means this is a new server/install. The server will rebuild its caches and indexes and then adjust it's last synced id to the latest found in the database and will start maintaining cache updates based on that id
+ 2016-07-14 08:51:37,834 [P6676/D2/T1] INFO  umbraco.content - Load Xml from file...
+ 2016-07-14 08:51:37,916 [P6676/D2/T1] INFO  umbraco.content - Loaded Xml from file.
+ 2016-07-14 08:51:37,958 [P6676/D2/T1] INFO  umbraco.content - Loading content from database...
+ 2016-07-14 08:51:41,484 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-07-14 08:51:41,486 [P6676/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 1ms)
+ 2016-07-14 08:51:42,711 [P6676/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-07-14 08:51:42,712 [P6676/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-07-14 08:51:42,712 [P6676/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-07-14 08:51:42,747 [P6676/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 9820ms)
+ 2016-07-14 08:51:44,646 [P6676/D2/T9] INFO  umbraco.content - Save Xml to file...
+ 2016-07-14 08:51:44,723 [P6676/D2/T11] INFO  umbraco.content - Saved Xml to file.
+ 2016-07-14 08:51:52,849 [P6676/D2/T11] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://rongphung.guline.com:80/umbraco (UmbracoModule request)
+ 2016-07-14 08:51:54,824 [P6676/D2/T11] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-07-14 08:51:54,825 [P6676/D2/T11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 1ms)
+ 2016-07-14 08:52:15,353 [P6676/D2/T21] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username admin@admin.com from IP address 42.114.246.29
+ 2016-07-14 08:52:16,074 [P6676/D2/T21] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-07-14 08:52:16,076 [P6676/D2/T21] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 1ms)
+ 2016-07-14 08:52:16,315 [P6676/D2/T21] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-07-14 08:52:16,317 [P6676/D2/T21] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 1ms)
+ 2016-07-14 08:52:16,338 [P6676/D2/T11] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplication
+ 2016-07-14 08:52:16,339 [P6676/D2/T11] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplication, found 0 (took 1ms)
+ 2016-07-14 08:52:16,345 [P6676/D2/T21] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-07-14 08:52:16,345 [P6676/D2/T21] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-07-14 08:52:16,349 [P6676/D2/T21] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.ITree
+ 2016-07-14 08:52:16,349 [P6676/D2/T21] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.ITree, found 0 (took 0ms)
+ 2016-07-14 08:52:55,172 [P6676/D2/T8] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-07-13 08:52:55
+ 2016-07-14 09:11:47,587 [P6676/D2/T18] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: admin@admin.com, IP Address: 42.114.246.29
+ 2016-07-14 09:18:51,304 [P6676/D2/T40] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username admin@admin.com from IP address 42.114.246.29
+ 2016-07-14 09:18:51,312 [P6676/D2/T31] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username admin@admin.com from IP address 42.114.246.29
+ 2016-07-14 09:56:28,767 [P6676/D2/T25] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username admin@admin.com from IP address 42.114.246.30
+ 2016-07-14 10:16:03,569 [P6676/D2/T40] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: admin@admin.com, IP Address: 42.114.246.30
+ 2016-07-14 10:27:23,234 [P6676/D2/T37] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username admin@admin.com from IP address 42.114.246.30
+ 2016-07-14 11:03:33,538 [P6676/D2/T53] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: admin@admin.com, IP Address: 42.114.246.30
+ 2016-07-14 11:03:39,531 [P6676/D2/T60] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: admin@admin.com, IP Address: 42.114.246.30
+ 2016-07-14 12:52:55,163 [P6676/D2/T21] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-07-13 12:52:55
+ 2016-07-14 13:48:23,589 [P6676/D2/T34] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username admin@admin.com from IP address 42.114.246.30
+ 2016-07-14 13:48:23,735 [P6676/D2/T34] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Trees.TreeController
+ 2016-07-14 13:48:23,735 [P6676/D2/T34] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Trees.TreeController, found 0 (took 0ms)
+ 2016-07-14 14:20:35,469 [P6676/D2/T76] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: admin@admin.com, IP Address: 42.114.246.30
+ 2016-07-14 16:52:55,164 [P6676/D2/T21] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-07-13 16:52:55
+ 2016-07-14 20:52:55,177 [P6676/D2/T21] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-07-13 20:52:55

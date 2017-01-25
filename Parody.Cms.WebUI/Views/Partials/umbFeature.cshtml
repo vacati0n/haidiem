@@ -1,0 +1,52 @@
+﻿@inherits UmbracoTemplatePage
+@using Parody.Cms.Core
+@{
+    var currentpage = uQuery.GetCurrentNode();
+}
+@*<div class="row">
+    <div class="col-md-12">
+        <h3 class="title"> Sản phẩm nổi bật</h3>
+    </div>
+    @{
+        Html.RenderPartial("umbProductShow",null,new ViewDataDictionary(this.ViewData){
+            {"currentNode",currentpage},
+            {"itemperpage",3},
+            {"type",1}
+        });
+    }
+</div>*@
+
+
+<div class="row">
+
+    <div class="col-md-12 main-feature">
+        <div class="col-md-4">
+            <a href="#">
+                <img class="img-responsive" src="~/img/trang-diem-co-dau-496.jpg" />
+            </a>
+            <span>Dịch vụ đám cưới</span>
+            <p class="feature-description">
+                Bạn lo lắng không biết chiếc áo cưới nào sẽ giúp bạn thật sự tự tin và rạng ngời trong ngày hạnh phúc trăm năm của đời mình
+            </p>
+        </div>
+        <div class="col-md-4">
+            <a href="#">
+                <img class="img-responsive" src="~/img/rongphung.jpg" />
+            </a>
+            <span>Dịch vụ đám cưới</span>
+            <p class="feature-description">
+                Bạn lo lắng không biết chiếc áo cưới nào sẽ giúp bạn thật sự tự tin và rạng ngời trong ngày hạnh phúc trăm năm của đời mình
+            </p>
+        </div>
+        <div class="col-md-4">
+            <a href="#">
+                <img class="img-responsive" src="~/img/trang-diem-co-dau-496.jpg" />
+            </a>
+            <span>Dịch vụ đám cưới</span>
+            <p class="feature-description">
+                Bạn lo lắng không biết chiếc áo cưới nào sẽ giúp bạn thật sự tự tin và rạng ngời trong ngày hạnh phúc trăm năm của đời mình
+            </p>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,18 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "MasterPage.cshtml";
+    var currentpage=uQuery.GetCurrentNode();
+}
+<section class="product-page container">
+    <div class="row">
+        @{
+            Html.RenderPartial("umbProductShow", new ViewDataDictionary(this.ViewData){
+            {"currentNode",currentpage},
+            {"itemperpage",currentpage.GetProperty<int>("shownumberofproduct")},
+            {"type",2}
+        });
+        }
+        @{ Html.RenderPartial("umbProductPaging"); }
+    </div>
+
+</section>

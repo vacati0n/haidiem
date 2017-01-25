@@ -1,0 +1,19 @@
+﻿@inherits UmbracoTemplatePage
+@using Parody.Cms.Core
+@{
+    var currentpage = uQuery.GetCurrentNode();
+}
+<div class="row">
+    <div class="col-md-12">
+        <h3 class="title">Rong Phung </h3>
+    </div>
+    @{
+        Html.RenderPartial("umbProductShow",null,new ViewDataDictionary(this.ViewData){
+            {"currentNode",currentpage},
+            {"itemperpage",3},
+            {"type",1}
+        });
+    }
+</div>
+
+

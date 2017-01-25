@@ -1,0 +1,45 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    var currentpage = (umbraco.NodeFactory.Node)ViewData["currentNode"];
+    var itemperpage = (int)ViewData["itemperpage"];
+    var type = (int)ViewData["type"];
+    IEnumerable<umbraco.interfaces.INode> listitem;
+    if (currentpage.Id == uQuery.GetNodesByType("ProductPage").FirstOrDefault().Id)
+    {
+        listitem = currentpage.ChildrenAsList.Take(itemperpage);
+    }
+    else
+    {
+        
+        var ListValue = Model.Content.GetPropertyValue<string>("productHightlight");
+        var List = ListValue.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse);
+        //listitem = Umbraco.TypedContent(List).Where(x => x != null);
+        List<umbraco.interfaces.INode> listnode=new List<umbraco.interfaces.INode>();
+        foreach(var a in List)
+        {
+            listnode.Add(uQuery.GetNode(a));
+        }
+        listitem =listnode;
+    }
+}
+@{
+    foreach (var item in listitem)
+    {
+        var m = Umbraco.Media(item.GetProperty<string>("hinhAnh"));
+        <div class="@(type == 1 ? "col-md-4" : "col-md-3")">
+            <div class="product-item">
+                <a href="@item.NiceUrl">
+                    <img class="img-responsive" src="@(m.Url)" />
+                    <h4 class="product-item-name text-center">
+                        @(item.GetProperty<string>("pageName"))
+                    </h4>
+                    <p class="text-center">
+                        @(item.GetProperty<string>("price") == "" ? "LIÊN HỆ" : item.GetProperty<string>("price") + "VNĐ")
+                    </p>
+                </a>
+            </div>
+
+        </div>
+    }
+
+}

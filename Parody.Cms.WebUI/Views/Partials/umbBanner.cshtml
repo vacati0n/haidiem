@@ -1,0 +1,28 @@
+﻿@inherits UmbracoTemplatePage
+@using Parody.Cms.Core
+@{
+    this.RegisteredScripts("slickjs", "~/Scripts/lib/slick.min.js");
+    this.RegisteredCss("slickcss", "~/css/lib/slick.css");
+    this.RegisteredCss("slicktheme", "~/css/lib/slick-theme.css");
+}
+@if (Model.Content.HasValue("bannerImage"))
+{
+
+    foreach (var imageItem in CurrentPage.bannerImage)
+    {
+        <div class="slider-item col-md-12">
+            @if (imageItem.link != "")
+            {
+                var contentLink = Umbraco.NiceUrl(int.Parse(imageItem.link.ToString()));
+                <a href="@contentLink">
+                    @if(imageItem.image !="")
+                    {
+                    IPublishedContent Image = Umbraco.TypedMedia(imageItem.image.ToString());
+                    <img class="img-responsive" src="@Image.Url" />
+                    }
+                </a>
+            }
+           
+        </div>
+    }
+}

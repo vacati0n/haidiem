@@ -1,0 +1,29 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@{
+    Layout = "MasterPage.cshtml";
+}
+<section class="product-page-item container">
+    <div class="row">
+        @{
+            Html.RenderPartial("umbBread");
+        }
+    </div>
+    <div class="row">
+        <div class="col-md-5 p-left-0 product-item-image" >
+            @{
+                var image = Umbraco.Media(CurrentPage.hinhAnh);
+                <img class="img-responsive" src="@image.Url" alt="@image.Name" />
+            }
+            
+
+        </div>
+        <div class="col-md-7 product-item-info p-right-0" >
+            <p class="title">THÔNG TIN SẢN PHẨM</p>
+            @CurrentPage.moTa
+            <p class="title">
+                PHƯƠNG THỨC THANH TOÁN
+            </p>
+            @CurrentPage.phuongThucThanhToan
+        </div>
+    </div>
+</section>

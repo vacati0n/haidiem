@@ -1,0 +1,96 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Parody.Cms.Core
+@{
+    Layout = "MasterPage.cshtml";
+    this.RegisteredCss("transitions","~/css/lib/transitions.css");
+    this.RegisteredScripts("collagePlus", "~/Scripts/lib/jquery.collagePlus.min.js");
+    this.RegisteredScripts("removeWhitespace","~/Scripts/lib/jquery.removeWhitespace.min.js");
+    this.RegisteredScripts("collageCaption", "~/Scripts/lib/jquery.collageCaption.min.js");
+}
+@section Scripts
+{
+<script type="text/javascript">
+
+    // All images need to be loaded for this plugin to work so
+    // we end up waiting for the whole window to load in this example
+    $(window).load(function () {
+        $(document).ready(function () {
+            collage();
+            $('.Collage').collageCaption();
+        });
+    });
+
+
+    // Here we apply the actual CollagePlus plugin
+    function collage() {
+        $('.Collage').removeWhitespace().collagePlus(
+            {
+                'fadeSpeed': 2000,
+                'targetHeight': 210,
+                'effect': 'effect-5',
+                'direction': 'vertical'
+            }
+        );
+    };
+
+    // This is just for the case that the browser window is resized
+    var resizeTimer = null;
+    $(window).bind('resize', function () {
+        // hide all the images until we resize them
+        $('.Collage .Image_Wrapper').css("opacity", 0);
+        // set a timer to re-apply the plugin
+        if (resizeTimer) clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(collage, 200);
+    });
+
+</script>
+}
+<section class="Collage effect-parent container">
+    <div class="Image_Wrapper" data-caption="I want show somthing for this image and click open">
+        <a href="#">
+            <img src="../support/images/ed-lea-dribbble-10.jpg" />
+        </a>
+    </div>
+    <div class="Image_Wrapper">
+        <a href="#">
+            <img src="~/support/images/ed-lea-dribbble-9.png" />
+        </a>
+    </div>
+    <div class="Image_Wrapper">
+        <a href="#">
+            <img src="../support/images/ed-lea-dribbble-8.png" />
+        </a>
+    </div>
+    <div class="Image_Wrapper">
+        <a href="#">
+            <img src="../support/images/ed-lea-dribbble-7.png" />
+        </a>
+    </div>
+    <div class="Image_Wrapper">
+        <a href="#">
+            <img src="../support/images/ed-lea-dribbble-6.png" />
+        </a>
+    </div>
+    <div class="Image_Wrapper" data-caption="I want show somthing for this image and click open">
+        <a href="#">
+            <img src="../support/images/ed-lea-dribbble-5.png" />
+        </a>
+    </div>
+    <div class="Image_Wrapper">
+        <a href="#">
+            <img src="../support/images/ed-lea-dribbble-4.png" />
+        </a>
+    </div>
+    <div class="Image_Wrapper">
+        <a href="#">
+            <img src="../support/images/ed-lea-dribbble-3.png" />
+        </a>
+    </div>
+    <div class="Image_Wrapper">
+        <a href="#">
+            <img src="../support/images/ed-lea-dribbble-1.png" />
+        </a>
+    </div>
+
+
+</section>

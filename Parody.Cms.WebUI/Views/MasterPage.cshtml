@@ -1,0 +1,124 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Parody.Cms.Core
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<!--
+    TXT 2.0 by HTML5 UP
+    html5up.net | twitter.com/n33co
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>@Umbraco.Field("pageTitle", altFieldAlias: "pageName") | @Umbraco.Field("siteName", recursive: true)</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700|Open+Sans+Condensed:700" rel="stylesheet" />
+    @Styles.Render("~/Content/css")
+    @this.RenderRegisteredCss()
+    @this.RenderRegisteredTagHead()
+    <!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><script src="/js/html5shiv.js"></script><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 7]><link rel="stylesheet" href="/css/ie7.css" /><![endif]-->
+</head>
+<body onload="loadpageFunction()">
+    <div class="wrapper">
+        <header id="header">
+            <div class="header-line">
+                <div class="container">
+                    @*<p class="phone-number">
+                        <strong>
+                            0982 357 990 - 0982 357 990 
+                        </strong>
+                    </p>*@
+                </div>
+            </div>
+            <div class="navigation">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            @*<a class="logo" href="/">@Umbraco.Field("siteName", recursive: true)</a>*@
+                        </div>
+                        <div id="toggle" class="menu-toggle">
+                            <a href="#" class="toggle cross"><span></span></a>
+                        </div>
+                        <nav class="col-md-9">
+                            @{ Html.RenderPartial("umbTopNavigation"); }
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /Header -->
+        @RenderBody()
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="container">
+
+                <div class="row">
+                    <div class="vBottom">
+                        <div class="col-md-4 col-lg-3 col-sm-6 col-xs-12 hidden-sm hidden-xs">
+                            @*@{ Html.RenderPartial("umbSocial"); }*@
+                        </div>
+                        <!-- Copyright -->
+                        <div id="copyright" class="col-md-6">
+
+                            <div class="text-center">
+                                <ul class="nav-footer list-inline">
+                                    <li>
+                                        &copy; @DateTime.Now.Year @Umbraco.Field("copyright", recursive: true). All Right Reserved.
+                                    </li>
+                                    <li>
+                                        <a href="/termandcontion">Quy định &amp; điều kiện</a>
+                                    </li>
+                                    <li>
+                                        <a href="/policy">Chính sách riêng tư</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!-- /Copyright -->
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+        <div class="loading-mark">
+            <div class="loader">
+                <img src="~/img/loading/gears.gif" />
+            </div>
+
+        </div>
+    </div>
+    <!-- Header -->
+  
+    <!-- /Footer -->
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @this.RenderRegisteredJsLang()
+    @this.RenderRegisteredScripts()
+    @RenderSection("Scripts", false)
+    @this.RenderRegisteredScriptBlock()
+    <script>
+        function loadpageFunction() {
+            if ($(".Collage").length > 0)
+            {
+                $('.loading-mark').hide();
+            }
+            else
+            {
+
+                setTimeout(function () {
+                    $('.loading-mark').fadeOut();
+                }, 1000);
+            }
+        }
+       
+    </script>
+</body>
+</html>

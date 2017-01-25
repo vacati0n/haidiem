@@ -1,0 +1,40 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Parody.Cms.Core;
+@{
+    Layout = "MasterPage.cshtml";
+}
+@section Scripts
+{
+    <script>
+        $(function () {
+            $('.slider').slick({
+                dots: false,
+                autoplay: true,
+                autoplaySpeed: 10000,
+                slidesToScroll: 1,
+                arrows: false
+            });
+        })
+    </script>
+}
+<section class="banner">
+    <div class="slider row">
+        @{ Html.RenderPartial("umbBanner"); }
+    </div>
+</section>
+<div class="content-wrapper">
+    <div class="home-page container">
+
+        <section class="product-showcase">
+            @{Html.RenderPartial("umbFeature");}
+        </section>
+        
+        <section class="product-rp">
+            @{Html.RenderPartial("umbProduct");}
+        </section>
+        
+        <section class="album-wedding">
+            @{Html.RenderPartial("umbFeature");}
+        </section>
+    </div>
+</div>

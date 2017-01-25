@@ -1,0 +1,46 @@
+﻿ 2016-06-29 13:42:04,332 [P4544/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco 7.3.0 application starting on GULINESOLUTION
+ 2016-06-29 13:42:04,520 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Determining hash of code files on disk
+ 2016-06-29 13:42:04,535 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Hash determined (took 12ms)
+ 2016-06-29 13:42:04,878 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of umbraco.interfaces.IApplicationStartupHandler
+ 2016-06-29 13:42:05,050 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of umbraco.interfaces.IApplicationStartupHandler, found 0 (took 161ms)
+ 2016-06-29 13:42:05,190 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter
+ 2016-06-29 13:42:05,190 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyEditorValueConverter, found 0 (took 0ms)
+ 2016-06-29 13:42:05,190 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IPropertyValueConverter
+ 2016-06-29 13:42:05,190 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IPropertyValueConverter, found 0 (took 1ms)
+ 2016-06-29 13:42:05,253 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.Mvc.SurfaceController
+ 2016-06-29 13:42:05,253 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.Mvc.SurfaceController, found 0 (took 0ms)
+ 2016-06-29 13:42:05,253 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Web.WebApi.UmbracoApiController
+ 2016-06-29 13:42:05,253 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Web.WebApi.UmbracoApiController, found 0 (took 3ms)
+ 2016-06-29 13:42:05,471 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IThumbnailProvider
+ 2016-06-29 13:42:05,471 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IThumbnailProvider, found 0 (took 1ms)
+ 2016-06-29 13:42:05,471 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Media.IImageUrlProvider
+ 2016-06-29 13:42:05,471 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Media.IImageUrlProvider, found 0 (took 1ms)
+ 2016-06-29 13:42:08,123 [P4544/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-06-29 13:42:08,872 [P4544/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-06-29 13:42:08,997 [P4544/D2/T1] INFO  Umbraco.Core.DatabaseContext - CanConnect = True
+ 2016-06-29 13:42:09,153 [P4544/D2/T1] WARN  Umbraco.Core.Sync.DatabaseServerMessenger - No last synced Id found, this generally means this is a new server/install. The server will rebuild its caches and indexes and then adjust it's last synced id to the latest found in the database and will start maintaining cache updates based on that id
+ 2016-06-29 13:42:09,168 [P4544/D2/T1] INFO  umbraco.content - Load Xml from file...
+ 2016-06-29 13:42:09,231 [P4544/D2/T1] INFO  umbraco.content - Loaded Xml from file.
+ 2016-06-29 13:42:09,262 [P4544/D2/T1] INFO  umbraco.content - Loading content from database...
+ 2016-06-29 13:42:15,112 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.PropertyEditors.IParameterEditor
+ 2016-06-29 13:42:15,112 [P4544/D2/T1] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.PropertyEditors.IParameterEditor, found 0 (took 3ms)
+ 2016-06-29 13:42:16,625 [P4544/D2/T9] INFO  umbraco.content - Save Xml to file...
+ 2016-06-29 13:42:16,703 [P4544/D2/T8] INFO  umbraco.content - Saved Xml to file.
+ 2016-06-29 13:42:17,842 [P4544/D2/T1] INFO  Umbraco.Web.Cache.CacheRefresherEventHandler - Initializing Umbraco internal event handlers for cache refreshing
+ 2016-06-29 13:42:17,889 [P4544/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Initializing Examine and binding to business logic events
+ 2016-06-29 13:42:17,889 [P4544/D2/T1] INFO  Umbraco.Web.Search.ExamineEvents - Adding examine event handlers for index providers: 3
+ 2016-06-29 13:42:17,982 [P4544/D2/T1] INFO  Umbraco.Core.CoreBootManager - Umbraco application startup complete (took 13837ms)
+ 2016-06-29 13:42:21,851 [P4544/D2/T12] INFO  Umbraco.Core.Sync.ApplicationUrlHelper - ApplicationUrl: http://rongphung.guline.com:80/umbraco (UmbracoModule request)
+ 2016-06-29 13:42:24,316 [P4544/D2/T12] INFO  Umbraco.Core.PluginManager - Starting resolution types of Umbraco.Core.Persistence.Mappers.BaseMapper
+ 2016-06-29 13:42:24,316 [P4544/D2/T12] INFO  Umbraco.Core.PluginManager - Completed resolution of types of Umbraco.Core.Persistence.Mappers.BaseMapper, found 0 (took 1ms)
+ 2016-06-29 13:43:30,585 [P4544/D2/T12] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-06-28 13:43:30
+ 2016-06-29 17:02:03,780 [P4544/D2/T55] ERROR Umbraco.Web.Scheduling.ScheduledPublishing - Failed (at "http://rongphung.guline.com:80/umbraco").
+System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'rongphung.guline.com'
+   at System.Net.HttpWebRequest.EndGetRequestStream(IAsyncResult asyncResult, TransportContext& context)
+   at System.Net.Http.HttpClientHandler.GetRequestStreamCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Umbraco.Web.Scheduling.ScheduledPublishing.<PerformRunAsync>d__5.MoveNext()
+ 2016-06-29 17:43:30,596 [P4544/D2/T12] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-06-28 17:43:30
+ 2016-06-29 21:43:30,591 [P4544/D2/T12] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2016-06-28 21:43:30

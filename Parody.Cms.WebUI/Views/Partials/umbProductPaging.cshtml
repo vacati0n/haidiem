@@ -1,0 +1,41 @@
+﻿@inherits UmbracoTemplatePage
+@{
+    var pagesize = 8;
+    if (Model.Content.HasValue("shownumberofproduct"))
+    {
+         pagesize = CurrentPage.shownumberofproduct;
+    }
+    var page = 1; 
+    int.TryParse(Request.QueryString["page"], out page);
+    var items = Umbraco.TypedContent(Model.Content.Id).Children.Where(x => x.DocumentTypeAlias == "ProductItem" && x.IsVisible());
+    var totalPages = (int)Math.Ceiling((double)items.Count() / (double)pagesize);
+    if (page > totalPages)
+    {
+        page = totalPages;
+    }
+    else if (page < 1)
+    {
+        page = 1;
+    }
+}
+    @if (totalPages > 1)
+{
+    <div class="center">
+        <ul class="pagination">
+            @if (page > 1)
+            {
+                <li><a href="@CurrentPage.Url@(page== 2?"":(page-1).ToString())">«</a></li>
+            }
+            @for (int p = 1; p < totalPages + 1; p++)
+            {
+                <li class="@(p == page ? "active" : string.Empty)">
+                    <a href="@CurrentPage.Url@(p == 1?"":p.ToString())">@p</a>
+                </li>
+            }
+            @if (page < totalPages)
+            {
+                <li><a href="@CurrentPage.Url@(page+1)">»</a></li>
+            }
+        </ul>
+    </div>
+}
